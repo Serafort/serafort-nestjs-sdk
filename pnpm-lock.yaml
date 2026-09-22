@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@serafort/core':
-        specifier: link:../Javascript
-        version: link:../Javascript
+        specifier: github:Serafort/serafort-javascript-sdk#5a4964fc41f08754c174d29b4af73074df17a9df
+        version: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df
     devDependencies:
       '@nestjs/common':
         specifier: ^10.4.15
@@ -21,6 +21,9 @@ importers:
       '@types/node':
         specifier: ^22.0.0
         version: 22.20.4
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -533,6 +536,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df':
+    resolution: {tarball: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df}
+    version: 0.1.0
+
   '@tokenizer/inflate@0.2.7':
     resolution: {integrity: sha512-MADQgmZT1eKjp06jpI2yozxaU9uVs4GzzgSL+uEq7bVcJ9V1ZXQkeGNql1fsSI0gMy1vhvNTNbUqrx+pZfJVmg==}
     engines: {node: '>=18'}
@@ -701,6 +708,11 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
@@ -1289,6 +1301,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.63.4':
     optional: true
 
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df': {}
+
   '@tokenizer/inflate@0.2.7':
     dependencies:
       debug: 4.4.3
@@ -1491,6 +1505,8 @@ snapshots:
     optional: true
 
   has-flag@4.0.0: {}
+
+  husky@9.1.7: {}
 
   ieee754@1.2.1: {}
 
